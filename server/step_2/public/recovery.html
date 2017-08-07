@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <div class="form">
+        <ul class="tab-group">
+            <li class="tab "><a href="./index.html">Добавить запись в базу</a></li>
+            <li class="tab active"><a href="./recovery.html">Востановить запись</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="signup">
+                <h1>Востановить запись</h1>
+                <form action="./recovery" method="post">
+
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label> Номер телефона<span class="req">*</span>
+                                <input type="tel" required name="phone" pattern="^+\d{11}$"  />
+                             </label>
+                            
+                        </div>
+
+                        <div class="field-wrap">
+                            <label>  Email<span class="req">*</span> 
+                                <input type="email" name="email" required  /> 
+                            </label>
+
+                        </div>
+                    </div>
+                    <button type="submit" class="button button-block" />Востановить запись</button>
+                </form>
+            </div>
+        </div>
+        <!-- tab-content -->
+    </div>
+    <!-- /form -->
+</body>
+
+</html>
